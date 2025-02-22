@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMundo Recycling - Book Appointment</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="TechMundo Recycling Logo">
+        </div>
+        <h1>TechMundo Recycling</h1>
+        <p>Professional Computer Repair & Buyback Services</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="buyback.html">Buyback Program</a>
+        <a href="booking.html">Book Appointment</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="booking">
+            <h2>Book an Appointment</h2>
+            <form action="mailto:ocalagan@mundo-cecorp.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service-type">Service Type *</label>
+                    <select id="service-type" name="service-type" required>
+                        <option value="">Select a Service</option>
+                        <option value="hardware-repair">Hardware Repair</option>
+                        <option value="software-service">Software Service</option>
+                        <option value="maintenance">Maintenance</option>
+                        <option value="buyback">Computer Buyback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferred-date">Preferred Date *</label>
+                    <input type="date" id="preferred-date" name="preferred-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferred-time">Preferred Time *</label>
+                    <select id="preferred-time" name="preferred-time" required>
+                        <option value="">Select a Time</option>
+                        <option value="morning">9:00 AM - 12:00 PM</option>
+                        <option value="afternoon">12:00 PM - 3:00 PM</option>
+                        <option value="evening">3:00 PM - 6:00 PM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="device-info">Device Information</label>
+                    <textarea id="device-info" name="device-info" placeholder="Please provide details about your device (Make, Model, Issue)"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Book Appointment</button>
+            </form>
+	    
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 TechMundo Recycling. All rights reserved.</p>
+    </footer>
+</body>
+</html>
